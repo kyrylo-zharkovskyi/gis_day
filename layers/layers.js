@@ -46,16 +46,7 @@ var jsonSource_ciezkipiesze_3 = new ol.source.Vector({
     attributions: ' ',
 });
 jsonSource_ciezkipiesze_3.addFeatures(features_ciezkipiesze_3);
-var lyr_ciezkipiesze_3 = new ol.layer.Vector({
-                declutter: false,
-                source:jsonSource_ciezkipiesze_3,
-maxResolution:2.8004466152261966,
- 
-                style: style_ciezkipiesze_3,
-                popuplayertitle: "Ściezki piesze",
-                interactive: false,
-                title: '<img src="styles/legend/ciezkipiesze_3.png" /> Ściezki piesze'
-            });
+
 var format_POI_4 = new ol.format.GeoJSON();
 var features_POI_4 = format_POI_4.readFeatures(json_POI_4, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
@@ -144,16 +135,16 @@ maxResolution:1.4002233076130983,
     <img src="styles/legend/POI_4_69.png" /> <br />'
         });
 
-lyr_GraybasemapOSM_0.setVisible(true);lyr_GoogleHybrid_1.setVisible(false);lyr_Wwa_PRG_dzielnice_2.setVisible(true);lyr_ciezkipiesze_3.setVisible(true);lyr_POI_4.setVisible(true);
-var layersList = [lyr_GraybasemapOSM_0,lyr_GoogleHybrid_1,lyr_Wwa_PRG_dzielnice_2,lyr_ciezkipiesze_3,lyr_POI_4];
+lyr_GraybasemapOSM_0.setVisible(true);lyr_GoogleHybrid_1.setVisible(false);lyr_Wwa_PRG_dzielnice_2.setVisible(true);lyr_POI_4.setVisible(true);
+var layersList = [lyr_GraybasemapOSM_0,lyr_GoogleHybrid_1,lyr_Wwa_PRG_dzielnice_2,,lyr_POI_4];
 lyr_Wwa_PRG_dzielnice_2.set('fieldAliases', {'JPT_SJR_KO': 'JPT_SJR_KO', 'JPT_POWIER': 'JPT_POWIER', 'JPT_KOD_JE': 'JPT_KOD_JE', 'JPT_NAZWA_': 'JPT_NAZWA_', 'JPT_ORGAN_': 'JPT_ORGAN_', 'JPT_JOR_ID': 'JPT_JOR_ID', 'WERSJA_OD': 'WERSJA_OD', 'WERSJA_DO': 'WERSJA_DO', 'WAZNY_OD': 'WAZNY_OD', 'WAZNY_DO': 'WAZNY_DO', 'JPT_KOD__1': 'JPT_KOD__1', 'JPT_NAZWA1': 'JPT_NAZWA1', 'JPT_ORGAN1': 'JPT_ORGAN1', 'JPT_WAZNA_': 'JPT_WAZNA_', 'ID_BUFORA_': 'ID_BUFORA_', 'ID_BUFORA1': 'ID_BUFORA1', 'ID_TECHNIC': 'ID_TECHNIC', 'IIP_PRZEST': 'IIP_PRZEST', 'IIP_IDENTY': 'IIP_IDENTY', 'IIP_WERSJA': 'IIP_WERSJA', 'JPT_KJ_IIP': 'JPT_KJ_IIP', 'JPT_KJ_I_1': 'JPT_KJ_I_1', 'JPT_KJ_I_2': 'JPT_KJ_I_2', 'JPT_OPIS': 'JPT_OPIS', 'JPT_SPS_KO': 'JPT_SPS_KO', 'ID_BUFOR_1': 'ID_BUFOR_1', 'JPT_ID': 'JPT_ID', 'JPT_POWI_1': 'JPT_POWI_1', 'JPT_KJ_I_3': 'JPT_KJ_I_3', 'JPT_GEOMET': 'JPT_GEOMET', 'JPT_GEOM_1': 'JPT_GEOM_1', 'Shape_Leng': 'Shape_Leng', 'Shape_Area': 'Shape_Area', });
-lyr_ciezkipiesze_3.set('fieldAliases', {'Id': 'Id', 'ORIG_FID': 'ORIG_FID', 'ORIG_SEQ': 'ORIG_SEQ', });
+
 lyr_POI_4.set('fieldAliases', {'fclass': 'fclass', 'name': 'name', 'feature': 'feature', 'layer': 'layer', });
 lyr_Wwa_PRG_dzielnice_2.set('fieldImages', {'JPT_SJR_KO': 'TextEdit', 'JPT_POWIER': 'TextEdit', 'JPT_KOD_JE': 'TextEdit', 'JPT_NAZWA_': 'TextEdit', 'JPT_ORGAN_': 'TextEdit', 'JPT_JOR_ID': 'Range', 'WERSJA_OD': 'DateTime', 'WERSJA_DO': 'DateTime', 'WAZNY_OD': 'DateTime', 'WAZNY_DO': 'DateTime', 'JPT_KOD__1': 'TextEdit', 'JPT_NAZWA1': 'TextEdit', 'JPT_ORGAN1': 'TextEdit', 'JPT_WAZNA_': 'TextEdit', 'ID_BUFORA_': 'TextEdit', 'ID_BUFORA1': 'TextEdit', 'ID_TECHNIC': 'Range', 'IIP_PRZEST': 'TextEdit', 'IIP_IDENTY': 'TextEdit', 'IIP_WERSJA': 'TextEdit', 'JPT_KJ_IIP': 'TextEdit', 'JPT_KJ_I_1': 'TextEdit', 'JPT_KJ_I_2': 'TextEdit', 'JPT_OPIS': 'TextEdit', 'JPT_SPS_KO': 'TextEdit', 'ID_BUFOR_1': 'Range', 'JPT_ID': 'Range', 'JPT_POWI_1': 'TextEdit', 'JPT_KJ_I_3': 'TextEdit', 'JPT_GEOMET': 'TextEdit', 'JPT_GEOM_1': 'TextEdit', 'Shape_Leng': 'TextEdit', 'Shape_Area': 'TextEdit', });
-lyr_ciezkipiesze_3.set('fieldImages', {'Id': 'Range', 'ORIG_FID': 'TextEdit', 'ORIG_SEQ': 'TextEdit', });
+
 lyr_POI_4.set('fieldImages', {'fclass': 'TextEdit', 'name': 'TextEdit', 'feature': 'TextEdit', 'layer': 'TextEdit', });
 lyr_Wwa_PRG_dzielnice_2.set('fieldLabels', {'JPT_SJR_KO': 'no label', 'JPT_POWIER': 'no label', 'JPT_KOD_JE': 'no label', 'JPT_NAZWA_': 'no label', 'JPT_ORGAN_': 'no label', 'JPT_JOR_ID': 'no label', 'WERSJA_OD': 'no label', 'WERSJA_DO': 'no label', 'WAZNY_OD': 'no label', 'WAZNY_DO': 'no label', 'JPT_KOD__1': 'no label', 'JPT_NAZWA1': 'no label', 'JPT_ORGAN1': 'no label', 'JPT_WAZNA_': 'no label', 'ID_BUFORA_': 'no label', 'ID_BUFORA1': 'no label', 'ID_TECHNIC': 'no label', 'IIP_PRZEST': 'no label', 'IIP_IDENTY': 'no label', 'IIP_WERSJA': 'no label', 'JPT_KJ_IIP': 'no label', 'JPT_KJ_I_1': 'no label', 'JPT_KJ_I_2': 'no label', 'JPT_OPIS': 'no label', 'JPT_SPS_KO': 'no label', 'ID_BUFOR_1': 'no label', 'JPT_ID': 'no label', 'JPT_POWI_1': 'no label', 'JPT_KJ_I_3': 'no label', 'JPT_GEOMET': 'no label', 'JPT_GEOM_1': 'no label', 'Shape_Leng': 'no label', 'Shape_Area': 'no label', });
-lyr_ciezkipiesze_3.set('fieldLabels', {'Id': 'no label', 'ORIG_FID': 'no label', 'ORIG_SEQ': 'no label', });
+
 lyr_POI_4.set('fieldLabels', {'fclass': 'no label', 'name': 'hidden field', 'feature': 'hidden field', 'layer': 'hidden field', });
 lyr_POI_4.on('precompose', function(evt) {
     evt.context.globalCompositeOperation = 'normal';
